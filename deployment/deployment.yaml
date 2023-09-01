@@ -1,3 +1,4 @@
+---
 kind: Deployment
 apiVersion: apps/v1
 metadata:
@@ -23,28 +24,4 @@ spec:
             requests:
               memory: "10Mi"
               cpu: "10m"
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: my-go
-spec:
-  ports:
-    - name: http-8081
-      port: 8081
-      protocol: TCP
-      targetPort: 8081
-  selector:
-    app: go-app
----
-kind: Route
-apiVersion: route.openshift.io/v1
-metadata:
-  name: my-go
-spec:
-  to:
-    kind: Service
-    name: my-go
-    weight: 100
-  port:
-    targetPort: http-8081
+

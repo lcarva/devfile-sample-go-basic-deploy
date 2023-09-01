@@ -1,0 +1,13 @@
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: my-go
+spec:
+  to:
+    kind: Service
+    name: my-go
+    weight: 100
+  port:
+    targetPort: http-8081
+
