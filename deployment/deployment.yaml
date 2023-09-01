@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-go
-          image: quay.io/lucarval/devfile-sample-go-basic:c167f6eb7fae2b89b11a3e5bdbc483eda6fc1256@sha256:e96c2a32deb710cfda78607244010e45267ec38fed5dcfe2d0a327808868bbf4
+          image: quay.io/lucarval/devfile-sample-go-basic:ae79691c731144106508024a031983bd73949ce4@sha256:d8fdb402ec6881c96db562b6e2276c49ae340b5ec7434ce7797e2dfba45b65a9
           ports:
             - name: http
               containerPort: 8081
